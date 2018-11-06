@@ -5,6 +5,138 @@
     h1{
         text-align: center;
         color: $white;
+        font-size: 36px;
+        padding: 60px 0;
+    }
+
+    &__wrap{
+
+        display: flex;
+        flex-wrap: wrap;                
+    }
+
+    &__mail--title, &__moreInfo--title{
+        color: $white;
+        text-transform: uppercase;
+        font-size: 18px; 
+        padding-bottom: 10px;
+        border-bottom: 3px solid $bgcommentborder;
+     }
+
+     &__mail--wrap{
+         display: flex;
+         justify-content: space-between;
+     }
+
+    &__mail{
+        flex-basis: 71.2%;
+        margin-right: 20px;
+    }
+
+    &__mail--name, &__mail--mail,&__mail--text {                      
+        background: $bgcontact;
+        border: none;      
+        color:$colorTextAbout;
+        padding: 10px 0 10px 10px; 
+       
+    }
+
+    &__mail--name{                        
+       
+      width: 50%; 
+      margin: 15px 7.5px 15px 0;                                
+    }
+
+    &__mail--mail{                
+      width: 50%; 
+      margin: 15px 0 15px 7.5px; 
+    }
+
+    &__mail--text{
+        width: 97%;
+        height: 109px;
+        background: $bgcontact;
+        border: none;
+        padding: 10px;
+        color:$colorTextAbout;        
+    }
+
+    &__btn--submit{
+        @include btn($cbsh:$bgboxshadowPrice);
+        padding: 5px;
+        border-radius: 0;
+        font-size:14px;
+        border: 0;
+        cursor: pointer;
+    }
+
+    &__moreInfo{
+
+        flex-basis: 23.9%;
+        margin-left: 20px;
+
+        p{
+            margin: 10px 0;
+            color:  $colorTextAbout; 
+        }
+    }
+
+    &__moreInfo--title{
+        margin-bottom: 30px;
+    }
+
+    &__moreInfo--boss{
+        margin-top: 30px;
+        color:  $colorTextAbout;
+    }
+    
+    &__btn--purchaise{
+        @include btn($cbsh:$bgboxshadowPrice);
+        padding: 5px;
+        border-radius: 0;
+        font-size:14px;
+    }
+}
+
+@media (max-width: 960px){
+
+    .contact{
+
+        &__wrap{
+            margin: 0 10px;
+            justify-content: space-around;
+        }
+    }
+}
+
+@media (max-width: 835px){
+
+    .contact{
+
+        &__mail{
+            flex-basis: 100%;
+        }
+
+        &__moreInfo{
+
+            flex-basis: 100%;
+            margin-left: 0;
+            text-align: center;
+        
+        }
+
+        &__moreInfo--title{
+            text-align: left;
+        }
+
+        &__btn--submit{
+            margin: 20px auto;
+        }
+
+        &__btn--purchaise{
+
+            margin: 20px auto;
+        }
     }
 
 }

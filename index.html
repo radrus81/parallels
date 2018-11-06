@@ -27,14 +27,14 @@
             <span>Parallels</span>
           </a>
         </div>
-        <div class="header__menu menu">  
+        <div id="menu" class="header__menu menu">  
           <ul>
-            <li><a class="menu__links-item" href="/">Home</a></li>
-            <li><a class="menu__links-item" href="#">Services</a></li>
-            <li><a class="menu__links-item" href="#">Portfolio</a></li>
-            <li><a class="menu__links-item" href="#">Pricing</a></li>
-            <li><a class="menu__links-item" href="#">About</a></li>
-            <li><a class="menu__links-item" href="#">Contact</a> </li>
+            <li><a class="menu__links-item" href="#menu">Home</a></li>
+            <li><a class="menu__links-item" href="#servises">Services</a></li>
+            <li><a class="menu__links-item" href="#portfolio">Portfolio</a></li>
+            <li><a class="menu__links-item" href="#pricing">Pricing</a></li>
+            <li><a class="menu__links-item" href="#about">About</a></li>
+            <li><a class="menu__links-item" href="#contact">Contact</a> </li>
           </ul>                                                                                         
         </div>
         <div class="header__right icon">
@@ -65,7 +65,7 @@
         </div>     
     </div>
     <!--SERVISES-->
-    <div class="servises">
+    <div id="servises" class="servises">
         <div class="wrap">
             <h1>Our Services</h1>
             <div class="servises__wrap">
@@ -112,7 +112,7 @@
       </div>
     </div>
     <!--PORTFOLIO-->
-    <div class="portfolio">
+    <div id="portfolio" class="portfolio">
         <div class="portfolio__wrap wrap">
           <h1>Portfolio</h1> 
           <div class="portfolio__menu">
@@ -163,7 +163,7 @@
 
     </div>
     <!--PRICING-->
-    <div class="pricing">
+    <div id="pricing" class="pricing">
         <div class="wrap">
             <h1>Pricing table<br>
                 <span>Clean beautiful flat table</span>
@@ -266,7 +266,7 @@
         </div>
     </div>
     <!--ABOUT US-->
-    <div class="about">
+    <div id="about" class="about">
         <div class="wrap">
             <h1>About Us</h1>
             <div class="about__wrap">
@@ -314,27 +314,49 @@
         </div>
     </div>
     <!--CONTACT US-->
-    <div class="contact">
+    <div id="contact" class="contact">
         <div class="wrap">
             <h1>Contact Us</h1>
             <div class="contact__wrap">
                 <div class="contact__mail">
-                    <p>MAIL</p>
-                    <input class="contact__mail--name" type="text" placeholder="Name"/>
-                    <input class="contact__mail--mail" type="email" placeholder="Mail"/>
-                    <textarea class="contact__mail--text" placeholder="Message"></textarea>
-                    <a href="#" class="contact__btn--submit">Submit mail</a>
+                    <p class="contact__mail--title">MAIL</p>
+                    <form action="">
+                        <div class="contact__mail--wrap">
+                            <input class="contact__mail--name" type="text" placeholder="Name" />
+                            <input class="contact__mail--mail" type="email" placeholder="Mail"/>
+                        </div>
+                            <textarea class="contact__mail--text" placeholder="Message"></textarea>
+                            <input type="submit" class="contact__btn--submit" value="Submit mail" />
+                    </form>
+                   
                 </div>
                 <div class="contact__moreInfo">
-                    <p>More info</p>                    
+                    <h3 class="contact__moreInfo--title">More info</h3>                    
                     <p>2 (555) 888 555 03 20</p>
                     <p>info@domain.com</p>
                     <p>skype: username</p>
-                    <p>John Dowl</p>
+                    <h4 class="contact__moreInfo--boss">John Dowl</h4>
                     <p>Salt Talke city. UT</p>
                     <p>87550</p>
                     <a href="#" class="contact__btn--purchaise">Purchaise</a>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <div class="footer">
+        <div class="footer__wrap wrap">
+            <div class="footer__left logo">
+                <a href="#">
+                    <img alt="Brand" src="img/logo.png">
+                    <span>Parallels</span>
+                </a>
+            </div>
+            <div class="footer__right--info">
+                <p>2 (555) 888 555 03 20</p>
+                <p>info@domain.com</p>
+                <p>skype: username</p>
             </div>
         </div>
     </div>

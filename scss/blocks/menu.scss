@@ -8,6 +8,7 @@
 
     ul li {
         margin-right: 10px;
+        margin-top: 10px;
     }
 
     a {
@@ -25,9 +26,17 @@
 
 }
 
+
+@media (max-width: 950px){
+
+    .menu ul {       
+        margin-left: 15px;
+    }
+}
 @media (max-width: 480px){
 
     .menu ul {
         justify-content: center;
+        margin-left: 15px;
     }
 }

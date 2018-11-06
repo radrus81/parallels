@@ -1,0 +1,140 @@
+.slider { 
+    background: url('../img/portfolio6.jpg') center no-repeat;
+    background-size: cover;  
+    opacity: 0.9;    
+    
+    &__wrap{
+        position: relative;       
+    }
+       
+    &__wrap p {
+        font-size: 60px;       
+        color: $white;
+        padding: 215px 0 250px 30px;              
+    }
+    &__wrap p span{
+        font-size: 40px;
+        line-height: 40px;
+        color: $white;
+        display: block;
+        margin-top: 20px;
+    }
+
+    &__icon--img{
+        position: absolute;
+        left: 55%;
+        top: 9.5%;
+    } 
+    
+    .owl-nav{
+
+        button.owl-prev, button.owl-next {
+            background: url('../img/sprite-arrow2.png') 0 0  no-repeat;
+            width: 49px;
+            height: 49px;
+            border: none;
+            box-shadow: none;
+            position: absolute;
+            left: -50px;
+            top:50%;
+            cursor: pointer; 
+            transform: translateY(-50%);
+
+        }
+
+        button.owl-prev:hover{
+            background-position: 0 -49px;
+        }
+
+        button.owl-next {
+            background-position: -49px 0;           
+            left: auto;
+            right: -50px;
+           
+            &:hover{
+                background-position: -49px -49px;
+            }
+        }
+    }
+
+    .owl-dots {
+        text-align: center;
+        padding: 0 0 15px 0;
+    
+        .owl-dot {
+          width: 10px;
+          height: 10px;
+          border-radius: 10px;
+          background-color: $white;
+          box-sizing: border-box;
+          border: none;
+          box-shadow: none;
+          padding: 0;
+          margin: 0 5px;
+          cursor: pointer;
+        }
+    
+        .active {
+          background-color: $black;
+        }    
+      }
+}
+
+@media (max-width: 1060px){
+
+    .slider{
+
+        &__wrap p {
+            font-size: 40px;                   
+            padding: 150px 0 150px 100px;                         
+        }
+        &__wrap p span{
+            font-size: 30px;           
+        }
+
+        &__icon--img {            
+            width: 28%;
+        }
+
+        .owl-nav{
+
+            button.owl-prev, button.owl-next {
+
+                left: 40px;
+            }
+            button.owl-next { 
+                left: auto;
+                right: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: 920px){
+
+    .slider{
+
+        &__wrap p {
+            font-size: 40px;                   
+            padding: 150px 0;                         
+            text-align: center;
+        }
+
+        &__icon--img {  
+            display: none;
+        }
+
+    }
+}
+
+
+@media (max-width: 780px){
+
+    .slider{
+        &__wrap p {                             
+            padding: 70px 0;                                 
+        }
+    }
+}
+
+

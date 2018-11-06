@@ -1,0 +1,74 @@
+.cleantheme{
+
+    background: url('../img/portfolio5.jpg') center no-repeat;
+    background-size: cover; 
+
+    &__wrap{
+        padding: 140px 0 100px 0;
+    }
+
+   h1{
+       padding: 0 0 40px 0;
+       color: $white;
+       font-size: 60px;
+       line-height: 30px;
+   }
+   
+   &__blockBtn{
+       display: flex;
+
+   }
+
+   &__btn--purchaise{
+        @include btn($bg:$menulinkcolor);
+        margin-right: 10px;
+   }
+
+   &__btn--follow{
+         @include btn($cbsh:#1f937d);
+   }
+}
+
+@media (max-width: 975px){
+
+    .cleantheme{
+
+        &__wrap{
+            padding: 70px 0 30px;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        &__blockBtn{
+            justify-content: center;     
+        }
+    }
+}
+
+@media (max-width: 788px){
+
+    .cleantheme{
+
+        h1{
+            font-size: 40px;
+            line-height: 40px;
+        }
+    }
+}
+
+@media (max-width: 460px){
+
+    .cleantheme{
+
+        &__blockBtn{
+            flex-direction: column;                       
+        }
+
+        &__btn--purchaise, &__btn--follow{            
+            margin: 5px auto;
+       }           
+    }
+
+}

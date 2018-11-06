@@ -1,0 +1,120 @@
+.about {
+
+    background: $headerColor;
+
+    h1{
+        text-align: center;
+        color: $white;
+        font-size: 36px;
+        line-height: 20px;
+        padding: 50px 0;
+    }
+
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__block{
+        flex-basis: 225px;        
+    }
+
+    &__block img{
+        width: 225px;
+    }
+
+    &__block--title{
+        text-align: center;
+        font-size: 20px;
+        line-height: 20px;
+        color: $white;
+        margin: 30px 0 5px 0;
+    }
+    
+    &__block--post{
+        text-align: center;
+        color: $white;
+        margin-bottom: 20px;
+    }
+
+    &__block--text{
+        text-align: center;
+        color: $colorTextAbout;
+        font-size: 13px;
+        line-height: 20px;
+
+    }
+
+    &__skills--title{
+        padding: 60px 0;
+        font-size: 18px;
+        line-height: 20px;
+        text-align: center;
+        color: $white; 
+        position: relative;       
+    }
+
+    &__skills--title::before, &__skills--title::after {
+        display: block;
+        border-bottom: 3px solid $bgcommentborder;
+        content: "";
+        width: 36%;
+        position: absolute;
+        top: 50%;
+    }
+
+    &__skills--title::after {        
+        right:0;
+    }
+
+    &__skills--indicator{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 60px;
+    }    
+}
+
+@media (max-width: 950px){
+
+    .about {
+
+        h1{
+            padding: 30px 0;
+        }
+
+        &__skills--title{
+            padding: 40px 0;
+        }
+
+        &__wrap{            
+            justify-content: space-around;            
+        }
+
+        &__block{
+            margin: 20px 5px 0 10px;
+        }
+
+        &__skills--indicator{
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding-bottom: 40px;
+        }
+
+        &__skills--indicator img{
+            display: block;
+            margin: 10px;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 400px){
+
+    .about {
+
+        &__skills--title::before, &__skills--title::after {
+            width: 30%;
+        }
+    }
+}

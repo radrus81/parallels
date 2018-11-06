@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@import "reset";
+@import "variables";
+@import "fonts";
+@import "mixins";
+@import "core";
+
+@import "blocks/header.scss";
+@import "blocks/menu.scss";
+@import "blocks/icon.scss";
+@import "blocks/slider.scss";
+@import "blocks/servises.scss";
+@import "blocks/cleantheme.scss";
+@import "blocks/portfolio.scss";
+@import "blocks/webdesing.scss";
+@import "blocks/photography.scss";
+@import "blocks/pricing.scss";
+@import "blocks/price.scss";
+@import "blocks/team.scss";
+@import "blocks/about.scss";

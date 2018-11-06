@@ -1,0 +1,33 @@
+.photography{
+
+    &__foto{
+        display: none;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    &__foto--img{
+        width: 225px;
+        height: 225px;
+        margin-bottom: 12px;
+        display: none;        
+    }
+    
+    &__loadmore{
+        display: none;
+        margin: 0 auto;
+        text-decoration: none;
+        line-height: 20px;
+        color: $white;
+        margin-top: 36px;
+        text-align: center;
+    }
+    &__loadmore:after{
+        display: block;
+        background: url('../img/foto_arrow.png') center no-repeat;
+        width: 31px;
+        height: 9px;
+        content: "";
+        margin: 15px auto 0 auto;
+    }
+}

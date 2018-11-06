@@ -1,0 +1,33 @@
+.menu{
+
+    ul {
+       display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap; 
+    }
+
+    ul li {
+        margin-right: 10px;
+    }
+
+    a {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 300;
+        color:$white;
+        text-decoration: none; 
+        
+
+        &:hover {
+            color: $menulinkcolor;
+        }
+    }
+
+}
+
+@media (max-width: 480px){
+
+    .menu ul {
+        justify-content: center;
+    }
+}
